@@ -1,4 +1,5 @@
 import pygame
+import math
 
 class CircleShape(pygame.sprite.Sprite):
     def __init__(self, x, y, radius):
@@ -15,3 +16,6 @@ class CircleShape(pygame.sprite.Sprite):
 
     def update(self, dt):
         pass
+
+    def is_colliding(self, other):
+        return self.position.distance_to(other.position) <= self.radius + other.radius
