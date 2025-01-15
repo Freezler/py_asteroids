@@ -1,6 +1,6 @@
 import pygame
 from constants import PLAYER_SPEED, PLAYER_RADIUS, PLAYER_ROTATION_SPEED, COLOR, PLAYER_SHOOT_SPEED, PLAYER_SHOOT_COOLDOWN
-from CircleShape import CircleShape
+from circleshape import CircleShape
 from shot import Shot
 
 

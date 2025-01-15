@@ -1,10 +1,14 @@
 import sys
 import pygame
+
 from constants import *
 from player import Player
 from asteroid import Asteroid
-from asteroidfield import AsteroidField
 from shot import Shot
+from asteroidfield import AsteroidField
+
+
+
 score = 0
 
 def main():
@@ -17,7 +21,6 @@ def main():
     asteroids = pygame.sprite.Group()
     shots = pygame.sprite.Group()
     score = 0
-
     Asteroid.containers = (asteroids, updatable, drawable)
     Shot.containers = (shots, updatable, drawable)
     AsteroidField.containers = updatable
@@ -62,3 +65,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
